@@ -18,7 +18,7 @@ def write_2_file(b):
 	f.write(b)
 	f.close()
 
-proxie = {'http':'socks5://ss.4399doc.com:1090', 'https':'socks5://ss.4399doc.com:1090'}  
+proxie = {'http':'socks5://ss的代理地址', 'https':'socks5://ss的代理地址'}  
 
 opener = request.build_opener(SocksiPyHandler(socks.SOCKS5, "ss.4399doc.com", 1090))
 request.install_opener(opener)
