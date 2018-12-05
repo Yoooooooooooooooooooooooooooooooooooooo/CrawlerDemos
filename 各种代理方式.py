@@ -54,13 +54,13 @@ def f_by_socket():
 from sockshandler import SocksiPyHandler
 
 def f_by_pysocks():
-	opener = request.build_opener(SocksiPyHandler(socks.SOCKS5, "ss.4399doc.com", 1090))
+	opener = request.build_opener(SocksiPyHandler(socks.SOCKS5, "ss的代理地址", 1090))
 	x = opener.open("https://source.pixiv.net/common/background-slideshow/bundle.js?d254c75c1687037fa95b")
 	print(x.read())
 
 import subprocess as sp
 def ping():
-	ping = sp.getstatusoutput("ping ss.4399doc.com")
+	ping = sp.getstatusoutput("ping ss的代理地址")
 	print(ping[1])
 
 def save_result(result):
