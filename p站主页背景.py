@@ -20,7 +20,7 @@ def write_2_file(b):
 
 proxie = {'http':'socks5://ss的代理地址', 'https':'socks5://ss的代理地址'}  
 
-opener = request.build_opener(SocksiPyHandler(socks.SOCKS5, "ss.4399doc.com", 1090))
+opener = request.build_opener(SocksiPyHandler(socks.SOCKS5, "ss的代理地址", 1090))
 request.install_opener(opener)
 
 header = {'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
